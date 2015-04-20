@@ -18,7 +18,7 @@ Will you have to become winged weapons of mass destruction to stop a worse fate 
 
 Find out in [[The Story So Far]]
 Or learn [[How To Play]]
-(set: $bally to true)(set: $ially to false)(set: $hally to false)(set: $ally to false)
+(set: $bally to true)(set: $ially to false)(set: $hally to false)
 
 
 </tw-passagedata><tw-passagedata pid="2" name="How To Play" tags="" position="450,200">Different species of butterflies have different stengths and weaknesses, belong to different types of colonies, and live in different places.
@@ -105,7 +105,7 @@ You could try to make an [[attack on the humans|Scenario B3]], the source of all
 &lt;!-- (need to track - reduce score for force, but raise alterness for humans) --&gt;
 </tw-passagedata><tw-passagedata pid="12" name="Scenario B3" tags="" position="300,875">(set: $chance to (random: 1,99))
 (if: $chance is &gt; 50)[You and hundreds of thousands of butterflies descend on a group of people in a busy city, sending them into shock and panic. Many butterflies are killed in the process, having so few defenses. Some humans die too, by running into traffic or through having heart attacks. City officials order an elimination of all of your species in the surrounding area, and in fear some other cities do likewise. There is such fear and bad feeling toward butterflies than any chance of convincing humans to change is lost, and your numbers are so depleted that you have lost the power to do anything else effective. [[You have failed|End]] to save your kind or any other living thing through your actions.]
-(else:)[(set: $hallys to true)
+(else:)[(set: $hally to true)
 The colonies get confused among the city streets and freak weather reroutes many of them. But maybe this was [[too much to take on alone|Message Others]] ]
 </tw-passagedata><tw-passagedata pid="13" name="Scenario C1" tags="" position="450,925">(set: $chance to (random: 1,99))
 Although you succeeded in changing the way pesticides were produced by most chemical companies and used by most farmers, there were some who didn’t take kindly to your interference and decided to take revenge, releasing all of their remaining toxins into the atmosphere, even though this might harm humans too.
@@ -139,7 +139,7 @@ This is a great strain after so many others, but even when some butterflies are 
 [[You see what help the animals might be|Scenario D3]]</tw-passagedata><tw-passagedata pid="17" name="Scenario D1" tags="" position="125,1350">(set: $chance to (random: 1,99))The humans are the ones that got the world into this mess. They disregarded all the other animals and dismissed the insects as unimportant, they ignored all the signs that they were harming the earth, and very few of them even tried to live in harmony with nature.
 
 This meant that they had the greatest power for change, and so you knew you had to appeal to them in any way possible.
-(if: $pest is 1 and $chance &gt; 50 or allys is true or pest is 2)[Maybe you can [[rely on your recent successes|Solution G1X]].]
+(if: $pest is 1 and $chance &gt; 50 or $hally is true or pest is 2)[Maybe you can [[rely on your recent successes|Solution G1X]].]
 (else:)[It might be a long short, but it&#x27;s worth [[trying|Solution G1Y]].]
 
 &lt;!-- if attacked humans then dead 
@@ -165,30 +165,20 @@ if attacked humans then maybe --&gt;
 
 &lt;!-- if attacked humans then definitely
 if stopped pesticides then maybe --&gt;
-</tw-passagedata><tw-passagedata pid="20" name="Solution G1X" tags="" position="75,1650">Work with human - succeed completely
-
-Through the application of millions of butterfly minds combined into one and along with all of the strange goings on the humans have seen lately, their minds are opened and receptive to considering a radically different way of life, one that helps rather than harms the planet.
+</tw-passagedata><tw-passagedata pid="20" name="Solution G1X" tags="" position="75,1650">Through the application of millions of butterfly minds combined into one and along with all of the strange goings on the humans have seen lately, their minds are opened and receptive to considering a radically different way of life, one that helps rather than harms the planet.
 
 This ultimately leads to symbiotic relationship in which humans look to butterflies as mentors over nature and are eventually able to communicate telepathtically back and forth with the animal and insect world. In time this brings about the next stage of human evolution.
-[[End]]</tw-passagedata><tw-passagedata pid="21" name="Solution G1Y" tags="" position="200,1650">Succeed with humans - partially
+[[End]]</tw-passagedata><tw-passagedata pid="21" name="Solution G1Y" tags="" position="200,1650">Your experiences with the humans have been confusing at best and they look upon nature with wariness and suspicion, but through your actions they are scared into just enough action, enough to hold off an apocalyptic end for now, but they look upon butterflies with suspicion and there is an unsteady truce with them.
 
-Your experiences with the humans have been confusing at best and they look upon nature with wariness and suspicion, but through your actions they are scared into just enough action, enough to hold off an apocalyptic end for now, but they look upon butterflies with suspicion and there is an unsteady truce with them.
-
-[[This is the end ... for now|End]]</tw-passagedata><tw-passagedata pid="22" name="Solution G3Y" tags="" position="775,1850">Sacrifice selves - succeed
-
-Being unable to communicate effectively enough through other means you and the rest of the butterfly population decide to make the ultimate sacrifice, to end your lives in a grand gesture to draw attention to the harm the humans have been doing.
+[[This is the end ... for now|End]]</tw-passagedata><tw-passagedata pid="22" name="Solution G3Y" tags="" position="775,1850">Being unable to communicate effectively enough through other means you and the rest of the butterfly population decide to make the ultimate sacrifice, to end your lives in a grand gesture to draw attention to the harm the humans have been doing.
 
 Around the world at different highly populated or important places butterflies lay down their lives, leaving a message of the cost of all of the pollution and alterations to nature. People come out in droves and feel a great sense of loss. In their grief and with a new sense of responsibility they change substantially, at least enough to hold off disaster enough to reshape society and create a better one which co-operates with the natural world.
 
-[[This is the end ... for now|End]]</tw-passagedata><tw-passagedata pid="23" name="Solution G3X" tags="" position="650,1775">Sacrifice selves - fail
-
-Driven by despair and desperation the butterfly world throws itself into self destruction. To those aside it doesn’t seem to follow reason, and your great sacrifice only leaves confusion.
+[[This is the end ... for now|End]]</tw-passagedata><tw-passagedata pid="23" name="Solution G3X" tags="" position="650,1775">Driven by despair and desperation the butterfly world throws itself into self destruction. To those aside it doesn’t seem to follow reason, and your great sacrifice only leaves confusion.
 
 A few understand the message you were trying to send, but not enough to lead to any substantial change. This leaves all of life thats left to face it’s imminent disaster.
 
-[[This is the end ... for now|End]]</tw-passagedata><tw-passagedata pid="24" name="Solution G2X" tags="" position="475,1725">Destroy humans - partially succeed
-
-Different colonies have different idea how to bring about the destruction of the human part of the world. Some, through the beating of their wings, creates tsunami’s the wash away cities, others use huricannes similarly, or tornados. The more clever and hardy ones carry out a plan to change the ocean stream and route of the warmer winds and melt the polar ice caps.
+[[This is the end ... for now|End]]</tw-passagedata><tw-passagedata pid="24" name="Solution G2X" tags="" position="475,1725">Different colonies have different idea how to bring about the destruction of the human part of the world. Some, through the beating of their wings, creates tsunami’s the wash away cities, others use huricannes similarly, or tornados. The more clever and hardy ones carry out a plan to change the ocean stream and route of the warmer winds and melt the polar ice caps.
 
 In all there is a massive loss of human life, especially in coastal regions and flatlands. Not enough to make mankind extinct, but enough to put them back by decades and put off their end by nature until hopefully they realize the cost of their actions.
 

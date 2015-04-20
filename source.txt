@@ -8,7 +8,7 @@ Will you have to become winged weapons of mass destruction to stop a worse fate 
 
 Find out in [[The Story So Far]]
 Or learn [[How To Play]]
-(set: $bally to true)(set: $ially to false)(set: $hally to false)
+(set: $bally to true)(set: $ially to false)(set: $hally to false)(set: $pest to 0)
 
 
 </tw-passagedata><tw-passagedata pid="2" name="How To Play" tags="" position="450,200">Different species of butterflies have different stengths and weaknesses, belong to different types of colonies, and live in different places.
@@ -129,7 +129,7 @@ This is a great strain after so many others, but even when some butterflies are 
 [[You see what help the animals might be|Scenario D3]]</tw-passagedata><tw-passagedata pid="17" name="Scenario D1" tags="" position="125,1350">(set: $chance to (random: 1,99))The humans are the ones that got the world into this mess. They disregarded all the other animals and dismissed the insects as unimportant, they ignored all the signs that they were harming the earth, and very few of them even tried to live in harmony with nature.
 
 This meant that they had the greatest power for change, and so you knew you had to appeal to them in any way possible.
-(if: $pest is 1 and $chance &gt; 50 or $hally is true or pest is 2)[Maybe you can [[rely on your recent successes|Solution G1X]].]
+(if: $pest is 1 and $chance &gt; 50 or $hally is true or $pest is 2)[Maybe you can [[rely on your recent successes|Solution G1X]].]
 (else:)[It might be a long short, but it&#x27;s worth [[trying|Solution G1Y]].]
 
 &lt;!-- if attacked humans then dead 

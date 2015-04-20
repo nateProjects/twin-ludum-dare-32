@@ -1,5 +1,6 @@
 I Butterfly
-Will you find a way to reach oaut to the humans and prevent their self destruction?
+
+Will you find a way to reach out to the humans and prevent their self destruction?
 
 Will you have to become winged weapons of mass destruction to stop a worse fate for insect and animal life?
 
@@ -42,9 +43,8 @@ You could try to spread the message through your cousins, the moths, their anten
 [[Spead message with moths|Scenario A1]]
 
 You could try and use the strength of your ESP to reach the most butterflies around and hopefully find enough willing to pass on the message.
-[[Convince other butterflies to carry message|Scenario A2]]
 
-[[Scenario A2]]
+[[Convince other butterflies to carry message|Scenario A2]]
 
 You could travel as quick as you can to find those butterflies who share your sense of urgency and have them travel to others who are the same, until everyone who is interested is reached.
 
@@ -84,7 +84,8 @@ You could try to make an [[attack on the humans|Scenario B3]], the source of all
 
 (set: $chance to (random: 1,99))
 (if: $chance is > 50)[You and your supporters head to the largest butterfly enclosures you can find, and try a series of strategies to release your kind, which includes surrounding zoo keepers when they have a door briefly open the signalling for all those inside to leave, using your combined force to break through a window, and finding other exits that your fellow butterflies can sneak out through, such as drainage pipes. Some are so accustomed to their prisons they refuse to leave or even consider anything outside, but many do escape, and you prove yourself to all those who were skeptical. [[That went well, didn't it?|Scenario C3]] ]
-(else:)[
+(else:)[You try to coordinate wityh different colonies, but there is some confusion when your message doesn't come through clearly and they are left wondering what they should be doing.
+
 [[Try another way or try again?|Free Others]] ]
 
 (set: $chance to (random: 1,99))
@@ -113,9 +114,9 @@ Due to the drop in pesticide usage not only have butterflies been spared but the
 (elseif: $stren > 5)[Due to your ability to hide you [[avoid the effects|Message Others]] and help hide others, but only just in time.]
 (else:)[Your predators get the better of you and there is large [[loss of life|Depletion]].]
 
-/* try to escape - Swallowtail escapes $stren > 5
+<!-- try to escape - Swallowtail escapes $stren > 5
      Monarch in more urban areas
-try to hide - Skipper knows them better - speed = 7 */
+try to hide - Skipper knows them better - speed = 7 -->
 
 
 (set: $iallys to true)With the escape of so many butterflies every collector is out in force seeking to re-capture as much of your flying friends as possible, they have even enlisted the help of children with nets, making it into a game with rewards for those who catch the most.
@@ -148,15 +149,15 @@ The most productive and widespread are the bees and the ants, who have their own
 (if: $pest >= 1 or $hally is true)[Maybe you can [[rely on your recent successes|Solution G2X]].]
 (else:)[It might be a long short, but it's worth [[trying|Solution G2Y]].]
 
-/* if stopped pesticides then definitely
-if attacked humans then maybe */
+<!-- if stopped pesticides then definitely
+if attacked humans then maybe -->
 
 Other animals are not as destructive as the humans have been, they have suffered too by being used as food or being destroyed because they were feared or became trophies on hunter’s walls. Perhaps bridging the gap between insect and animals would give more powerful allies.
 (if: $hally is true and $pest is 1)[Maybe you can [[rely on your recent successes|Solution G3Y]].]
 (else:)[It might be a long short, but it's worth [[trying|Solution G3X]].]
 
-/* if attacked humans then definitely
-if stopped pesticides then maybe */
+<!-- if attacked humans then definitely
+if stopped pesticides then maybe -->
 Work with human - succeed completely
 
 Through the application of millions of butterfly minds combined into one and along with all of the strange goings on the humans have seen lately, their minds are opened and receptive to considering a radically different way of life, one that helps rather than harms the planet.
@@ -167,21 +168,21 @@ Succeed with humans - partially
 
 Your experiences with the humans have been confusing at best and they look upon nature with wariness and suspicion, but through your actions they are scared into just enough action, enough to hold off an apocalyptic end for now, but they look upon butterflies with suspicion and there is an unsteady truce with them.
 
-[[End]]
+[[This is the end ... for now|End]]
 Sacrifice selves - succeed
 
 Being unable to communicate effectively enough through other means you and the rest of the butterfly population decide to make the ultimate sacrifice, to end your lives in a grand gesture to draw attention to the harm the humans have been doing.
 
 Around the world at different highly populated or important places butterflies lay down their lives, leaving a message of the cost of all of the pollution and alterations to nature. People come out in droves and feel a great sense of loss. In their grief and with a new sense of responsibility they change substantially, at least enough to hold off disaster enough to reshape society and create a better one which co-operates with the natural world.
 
-[[End]]
+[[This is the end ... for now|End]]
 Sacrifice selves - fail
 
 Driven by despair and desperation the butterfly world throws itself into self destruction. To those aside it doesn’t seem to follow reason, and your great sacrifice only leaves confusion.
 
 A few understand the message you were trying to send, but not enough to lead to any substantial change. This leaves all of life thats left to face it’s imminent disaster.
 
-[[End]]
+[[This is the end ... for now|End]]
 Destroy humans - partially succeed
 
 Different colonies have different idea how to bring about the destruction of the human part of the world. Some, through the beating of their wings, creates tsunami’s the wash away cities, others use huricannes similarly, or tornados. The more clever and hardy ones carry out a plan to change the ocean stream and route of the warmer winds and melt the polar ice caps.
@@ -190,14 +191,7 @@ In all there is a massive loss of human life, especially in coastal regions and 
 
 Many butterflies die in this process too, with some species disappearing entirely, but some have lived on and if this situation arises again hopefully there will be enough of them to do something.
 
-[[End]]
-Destroy humans - succeed
-
-Through the efforts of millions of butterflies all beating their wings at the same time, wind and waves, the like of which the earth has not seen since prehistoric times, sweep throughout the nations of the world and blow or drown the human population from off of it’s face.
-
-The great cost of this has led to the demise of many non-marine animals also, and but most of the insect population will survive and it will probably be millions of years before those left will evolve to sentient creates who might be a danger to the earth again. Perhaps those beings will yet come from the humble butterfly, but whatever happens the butterflies will be there to help guide it.
-
-[[End]]
+[[This is the end ... for now|End]]
 You enjoyed this little story!
 
 Would you like to [[try again|Start Page]]?

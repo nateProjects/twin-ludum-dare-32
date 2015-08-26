@@ -1,0 +1,186 @@
+<tw-story></tw-story>
+
+<tw-storydata name="I Butterfly" startnode="1" creator="Twine" creator-version="2.0.4" ifid="E22C2377-9584-489D-8B98-114341D9D723" format="Harlowe" options=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="Start Page" tags="" position="525,0">Will you find a way to reach out to the humans and prevent their self destruction?
+
+Will you have to become winged weapons of mass destruction to stop a worse fate for insect and animal life?
+
+Find out in [[The Story So Far]]
+Or learn [[How To Play]]
+(set: $bally to true)(set: $ially to false)(set: $hally to false)(set: $pest to 0)
+
+
+</tw-passagedata><tw-passagedata pid="2" name="How To Play" tags="" position="450,200">Different species of butterflies have different stengths and weaknesses, belong to different types of colonies, and live in different places.
+
+Depending on which you are you may have to make different choices in order to succeed.
+
+[[The Story So Far]]</tw-passagedata><tw-passagedata pid="3" name="The Story So Far" tags="" position="625,200">The delicate balance of nature has been struggling to keep up with pollution. It is at a tipping point and soon the damage will soon be irreperable.
+
+You are a butterfly, the most seemingly harmless of all the insect world. But, unknown to the human world, butterflies can communicate with each other by sending extra sensory messages through their antennas. When they are all in touch, in tune and in agreement with each other they can become a common mind and act as one.
+
+Time is running out to prevent the end of almost all life on earth if you don&#x27;t act quickly.
+
+[[Species]]
+
+
+</tw-passagedata><tw-passagedata pid="4" name="Species" tags="" position="775,200">Among the species of butterfly are:
+
+The Monarch, the wisest and most aware of the human world.
+
+The Swallowtail, the hardiest of all butterflies and most adaptable.
+
+The Skipper, the fastest of all butterflies and most at home around other insects.
+
+Which type are you?
+
+(link:&quot;Monarch&quot;)[(set: $stren to 5)(set: $intel to 7)(set: $speed to 3)(goto: &quot;Alert Others&quot;)]?
+(link:&quot;Swallowtail&quot;)[(set: $stren to 7)(set: $intel to 3)(set: $speed to 5)(goto: &quot;Alert Others&quot;)]?
+(link:&quot;Skipper&quot;)[(set: $stren to 3)(set: $intel to 5)(set: $speed to 7)(goto: &quot;Alert Others&quot;)]?
+</tw-passagedata><tw-passagedata pid="5" name="Alert Others" tags="" position="600,350">You need to somehow let the rest of the butterfly world know what is happening. With their combined intelligence and strength maybe something can be done. But your own range is limited 
+
+You could try to spread the message through your cousins, the moths, their antennas have a broader range and they communicate at night when there is less distractions and interference.
+
+[[Spead message with moths|Scenario A1]]
+
+You could try and use the strength of your ESP to reach the most butterflies around and hopefully find enough willing to pass on the message.
+
+[[Convince other butterflies to carry message|Scenario A2]]
+
+You could travel as quick as you can to find those butterflies who share your sense of urgency and have them travel to others who are the same, until everyone who is interested is reached.
+
+[[Travel through world|Scenario A3]]
+</tw-passagedata><tw-passagedata pid="6" name="Scenario A1" tags="" position="450,500">(set: $chance to (random: 1,99))
+You wait until night, which tonight is a particularly cold one.
+(if: $stren is 7 or $stren is 5 and $chance is &gt; 50)[The moths are receptive to your message, especially as they are often overlooked by their daytime relatives. They feel honored to be able to take the message throughout the world, and happy to wake the Butterflies to give it to them. [[But how will the others respond?|Free Others]] ]
+(else:)[The cold night prevents you from venturing far. You try sending out a message before you have to return to shelter but it doesn’t seem to carry on the wind to anyone. 
+
+[[Try another way or try again?|Alert Others]] ]
+
+&lt;!-- If Swallowtail (strong) succeed (if: $stren is 7) 
+Or if Monarch maybe (if: $stren is 5 and $chance is &gt; 50) --&gt;
+</tw-passagedata><tw-passagedata pid="7" name="Scenario A2" tags="" position="600,500">(set: $chance to (random: 1,99))
+(if: $intel is 7 or $intel is 5 and $chance is &gt; 50)[You concentrate all of your energy into casting out a message as far and wide and as strongly as possible. You reach several who are receptive and pass it on to others, who again do the same until the whole world is covered and aware. [[Then you await a response.|Free Others]] ]
+(else:)[You try with all your might to muster up enough signal strength, flying high and concentrating deeply, but seem unable to reach anybody, at least any other butterfly who is willing to listen.
+
+[[Try another way or try again?|Alert Others]] ]
+
+&lt;!-- If monarch (intel) succeed (if: $intel is 7) 
+Or if Skipper maybe (if: $intel is 5 and $chance is &gt; 50) --&gt;</tw-passagedata><tw-passagedata pid="8" name="Scenario A3" tags="" position="750,500">(set: $chance to (random: 1,99))
+(if: $speed is 7 or $speed is 5 and $chance is &gt; 50)[You fly high and catch winds that take you far into areas where you know there are large colonies of butterflies. From there your message spreads out to other colonies until it reaches every part of the earth where your kind live. [[What will the colonies think?|Free Others]] ]
+(else:)[You try to ride the high sky winds, to dart through different areas, and to rise above everything that might slow you down, but you lack the strength and power to go far enough to reach those you would need to take your message.
+
+[[Try another way or try again?|Alert Others]] ]
+
+&lt;!-- If Skipper (speed) succeed (if: $speed is 7) 
+Or if Swallow maybe (if: $speed is 5 and $chance is &gt; 50) --&gt;
+</tw-passagedata><tw-passagedata pid="9" name="Free Others" tags="" position="575,725">Many of the butterfly kingdom accept your information and warnings, but others are more skeptical. They want a show of strength, a sign that you and those who support you can be a force to be reckoned with. They come up with several different ways they think you could prove yourselves:
+
+You could try to free thousands of butterflies from [[zoos and enclosures|Scenario B1]].
+
+You could try to take out a supply of pesticides at an [[industrial factory|Scenario B2]].
+
+You could try to make an [[attack on the humans|Scenario B3]], the source of all these problems.
+
+</tw-passagedata><tw-passagedata pid="10" name="Scenario B1" tags="" position="725,875">(set: $chance to (random: 1,99))
+(if: $chance is &gt; 50)[You and your supporters head to the largest butterfly enclosures you can find, and try a series of strategies to release your kind, which includes surrounding zoo keepers when they have a door briefly open the signalling for all those inside to leave, using your combined force to break through a window, and finding other exits that your fellow butterflies can sneak out through, such as drainage pipes. Some are so accustomed to their prisons they refuse to leave or even consider anything outside, but many do escape, and you prove yourself to all those who were skeptical. [[That went well, didn&#x27;t it?|Scenario C3]] ]
+(else:)[You try to coordinate wityh different colonies, but there is some confusion when your message doesn&#x27;t come through clearly and they are left wondering what they should be doing.
+
+[[Try another way or try again?|Free Others]] ]
+
+</tw-passagedata><tw-passagedata pid="11" name="Scenario B2" tags="" position="575,875">(set: $chance to (random: 1,99))
+(if: $chance is &gt; 50)[You decide that the presence of butterflies in these businesses that produce pesticides could make a difference, filling their offices and factories will remind them of who their products hurt. They kill some of your number when they bring in exterminators, but many of you are able to leave in the face of that danger and return when it has passed, to be a continual nuisance to the. When the owners realize that this is somehow a reaction to what their chemicals do to your species they make changes to the composition so that your kind can still live, at least at the butterfly stage of your existence. It is a far from complete victory and came at a cost, but you now have the confidence of those who doubted you. (set: $pest to 1)[[That went well, didn&#x27;t it?|Scenario C1]] ]
+(else:)[You consider many plans, but whole colonies in their desire to prove themselves head straight for the means of manufacture and manage to put a stop to the machinery, but at the cost of their own lives, as they become stuck in it’s gears and pipes and succumb to the effects of the pesticides. This sends a message to the human world about the dangers of such things, but also cuts down your force and weakens it. Will you have enough when the time comes to make a difference? (set: $pest to 2)[[You wonder what the effects may be|Scenario C2]] ]
+
+&lt;!-- (need to track - reduce score for force, but raise alterness for humans) --&gt;
+</tw-passagedata><tw-passagedata pid="12" name="Scenario B3" tags="" position="300,875">(set: $chance to (random: 1,99))
+(if: $chance is &gt; 50)[You and hundreds of thousands of butterflies descend on a group of people in a busy city, sending them into shock and panic. Many butterflies are killed in the process, having so few defenses. Some humans die too, by running into traffic or through having heart attacks. City officials order an elimination of all of your species in the surrounding area, and in fear some other cities do likewise. There is such fear and bad feeling toward butterflies than any chance of convincing humans to change is lost, and your numbers are so depleted that you have lost the power to do anything else effective. [[You have failed|End]] to save your kind or any other living thing through your actions.]
+(else:)[(set: $hally to true)
+The colonies get confused among the city streets and freak weather reroutes many of them. But maybe this was [[too much to take on alone|Message Others]] ]
+</tw-passagedata><tw-passagedata pid="13" name="Scenario C1" tags="" position="450,925">(set: $chance to (random: 1,99))
+Although you succeeded in changing the way pesticides were produced by most chemical companies and used by most farmers, there were some who didn’t take kindly to your interference and decided to take revenge, releasing all of their remaining toxins into the atmosphere, even though this might harm humans too.
+(if: $speed = 7)[Due to your speed you notice the danger and [[manage to escape|Message Others]], taking most others with you.]
+(elseif: $stren =7 or $stren =5 and $chance &gt; 50)[Due to your ability to hide you [[avoid the effects|Message Others]] and help hide others, but only just in time.]
+(else:)[You [[succumb to the effects|Depletion]] of the peticide.]
+
+&lt;!-- (maybe reduce human numbers / maybe)
+(need to track this - can one species make it all the way through - hints - maybe ‘lives&#x27;) --&gt;
+
+&lt;!-- try to escape - Skipper escapes speed 7
+try to hide - Swallowtail withstand
+     Monarch - maybe --&gt;</tw-passagedata><tw-passagedata pid="14" name="Scenario C2" tags="" position="575,1050">Due to the drop in pesticide usage not only have butterflies been spared but the effectiveness against other insects has lessened too. Many other insects are grateful for this, but some of your predators have no such loyalty and are poised for an all out assault on your colonies.
+(if: $stren &gt; 5)[Due to your speed you notice the danger and [[manage to escape|Message Others]], taking most others with you.]
+(elseif: $stren &gt; 5)[Due to your ability to hide you [[avoid the effects|Message Others]] and help hide others, but only just in time.]
+(else:)[Your predators get the better of you and there is large [[loss of life|Depletion]].]
+
+&lt;!-- try to escape - Swallowtail escapes $stren &gt; 5
+     Monarch in more urban areas
+try to hide - Skipper knows them better - speed = 7 --&gt;
+
+
+</tw-passagedata><tw-passagedata pid="15" name="Scenario C3" tags="" position="725,1050">(set: $iallys to true)With the escape of so many butterflies every collector is out in force seeking to re-capture as much of your flying friends as possible, they have even enlisted the help of children with nets, making it into a game with rewards for those who catch the most.
+
+This is a great strain after so many others, but even when some butterflies are caught the rest continue to stand behind you. However, you may still need some [[Help from others|Message Others]]</tw-passagedata><tw-passagedata pid="16" name="Message Others" tags="" position="575,1225">With your recent challenges dealt with, now you have a chance to reach out to others, to try and get your message to other beings: insects, animals, and even humans. You need all the allies you can find, but your previous actions may have hindered or helped your reputation with some of them.
+
+[[You decide to deal with the humans|Scenario D1]]
+
+[[You stick closely to your relatives, the insects|Scenario D2]]
+
+[[You see what help the animals might be|Scenario D3]]</tw-passagedata><tw-passagedata pid="17" name="Scenario D1" tags="" position="125,1350">(set: $chance to (random: 1,99))The humans are the ones that got the world into this mess. They disregarded all the other animals and dismissed the insects as unimportant, they ignored all the signs that they were harming the earth, and very few of them even tried to live in harmony with nature.
+
+This meant that they had the greatest power for change, and so you knew you had to appeal to them in any way possible.
+(if: $pest is 1 and $chance &gt; 50 or $hally is true or $pest is 2)[Maybe you can [[rely on your recent successes|Solution G1X]].]
+(else:)[It might be a long short, but it&#x27;s worth [[trying|Solution G1Y]].]
+
+&lt;!-- if attacked humans then dead 
+if stopped pesticides (attack) then maybe
+if released butterflies then probably
+if stopped pesticides (peaceful) then definitely
+--&gt;
+</tw-passagedata><tw-passagedata pid="18" name="Scenario D3" tags="" position="575,1375">Message insects
+
+You are not alone in being affected by the loss of nature, the increase in pesticides and the destruction of fruitful land, other insects have suffered greatly too, and could be of help to you.
+
+The most productive and widespread are the bees and the ants, who have their own communication networks, and their own strengths. Their assistance might just make a difference.
+
+(if: $pest &gt;= 1 or $hally is true)[Maybe you can [[rely on your recent successes|Solution G2X]].]
+(else:)[It might be a long short, but it&#x27;s worth [[trying|Solution G2Y]].]
+
+&lt;!-- if stopped pesticides then definitely
+if attacked humans then maybe --&gt;
+
+</tw-passagedata><tw-passagedata pid="19" name="Scenario D2" tags="" position="425,1375">Other animals are not as destructive as the humans have been, they have suffered too by being used as food or being destroyed because they were feared or became trophies on hunter’s walls. Perhaps bridging the gap between insect and animals would give more powerful allies.
+(if: $hally is true and $pest is 1)[Maybe you can [[rely on your recent successes|Solution G3Y]].]
+(else:)[It might be a long short, but it&#x27;s worth [[trying|Solution G3X]].]
+
+&lt;!-- if attacked humans then definitely
+if stopped pesticides then maybe --&gt;
+</tw-passagedata><tw-passagedata pid="20" name="Solution G1X" tags="" position="75,1650">Through the application of millions of butterfly minds combined into one and along with all of the strange goings on the humans have seen lately, their minds are opened and receptive to considering a radically different way of life, one that helps rather than harms the planet.
+
+This ultimately leads to symbiotic relationship in which humans look to butterflies as mentors over nature and are eventually able to communicate telepathtically back and forth with the animal and insect world. In time this brings about the next stage of human evolution.
+[[End]]</tw-passagedata><tw-passagedata pid="21" name="Solution G1Y" tags="" position="200,1650">Your experiences with the humans have been confusing at best and they look upon nature with wariness and suspicion, but through your actions they are scared into just enough action, enough to hold off an apocalyptic end for now, but they look upon butterflies with suspicion and there is an unsteady truce with them.
+
+[[This is the end ... for now|End]]</tw-passagedata><tw-passagedata pid="22" name="Solution G3Y" tags="" position="775,1850">Being unable to communicate effectively enough through other means you and the rest of the butterfly population decide to make the ultimate sacrifice, to end your lives in a grand gesture to draw attention to the harm the humans have been doing.
+
+Around the world at different highly populated or important places butterflies lay down their lives, leaving a message of the cost of all of the pollution and alterations to nature. People come out in droves and feel a great sense of loss. In their grief and with a new sense of responsibility they change substantially, at least enough to hold off disaster enough to reshape society and create a better one which co-operates with the natural world.
+
+[[This is the end ... for now|End]]</tw-passagedata><tw-passagedata pid="23" name="Solution G3X" tags="" position="650,1775">Driven by despair and desperation the butterfly world throws itself into self destruction. To those aside it doesn’t seem to follow reason, and your great sacrifice only leaves confusion.
+
+A few understand the message you were trying to send, but not enough to lead to any substantial change. This leaves all of life thats left to face it’s imminent disaster.
+
+[[This is the end ... for now|End]]</tw-passagedata><tw-passagedata pid="24" name="Solution G2X" tags="" position="475,1725">Different colonies have different idea how to bring about the destruction of the human part of the world. Some, through the beating of their wings, creates tsunami’s the wash away cities, others use huricannes similarly, or tornados. The more clever and hardy ones carry out a plan to change the ocean stream and route of the warmer winds and melt the polar ice caps.
+
+In all there is a massive loss of human life, especially in coastal regions and flatlands. Not enough to make mankind extinct, but enough to put them back by decades and put off their end by nature until hopefully they realize the cost of their actions.
+
+Many butterflies die in this process too, with some species disappearing entirely, but some have lived on and if this situation arises again hopefully there will be enough of them to do something.
+
+[[This is the end ... for now|End]]
+</tw-passagedata><tw-passagedata pid="25" name="End" tags="" position="300,1850">You enjoyed this little story!
+
+Would you like to [[try again|Start Page]]?
+
+&lt;!-- Add - You saved … % of humans / % of butterflies --&gt;</tw-passagedata><tw-passagedata pid="26" name="Spead message with moths" tags="" position="675,0">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="27" name="Depletion" tags="" position="375,1200">You were not so lucky, nor were the other butterflies with you, and far too many in similar circumstances around the world. This depleted your numbers to such an extent than any hope of making any changes or even reaching and working with enough other insects or animals is now impossible. You await [[the end|End]] feeling powerless.</tw-passagedata><tw-passagedata pid="28" name="Solution G2Y" tags="" position="421,1573">Through the efforts of millions of butterflies all beating their wings at the same time, wind and waves, the like of which the earth has not seen since prehistoric times, sweep throughout the nations of the world and blow or drown the human population from off of it’s face.
+
+The great cost of this has led to the demise of many non-marine animals also, and but most of the insect population will survive and it will probably be millions of years before those left will evolve to sentient creates who might be a danger to the earth again. Perhaps those beings will yet come from the humble butterfly, but whatever happens the butterflies will be there to help guide it.
+
+[[This is the end ... for now|End]]</tw-passagedata></tw-storydata>

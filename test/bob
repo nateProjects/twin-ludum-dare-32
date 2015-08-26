@@ -1,0 +1,24 @@
+# $1 filename
+
+ECHO "Backing up original file"
+
+cp $1 $1.bak
+
+ECHO "Exporting JavaScript file"
+
+sed -e '/<script\stitle/,/;<\/script>/!d' $1 > $1.js
+
+ECHO "Adding link to external JavaScript file"
+
+sed 's@
+/<script\stitle/,/;<\/script>@
+	<script type=\"text\/javascript\" src=\"$1.js\"><\/script>
+@' $1 > $1.tmp
+
+ECHO "Exporting CSS style file"
+
+sed -n '/<style\stitle/,/<\/style>/{p;q;}' $1 > $1.css
+
+ECHO "Adding link to external CSS style file"
+
+sed 's/<style.*style>/<link rel=\"stylesheet\" type=\"text\/css\" href=\"$1.css\">/' $1.tmp > $1.new

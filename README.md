@@ -5,4 +5,4 @@ I, Butterfly - Digital Game Book
 
 [Web test here](https://rawgit.com/nate2squared/ludum-dare-32/master/game.html)
 
-See [Twine Resources](https://github.com/nate2squared/game-creation/tree/master/twine)
+See [Twine Resources](https://github.com/nate2squared/twine)
